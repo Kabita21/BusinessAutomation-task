@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="px-52 bg-slate-100">
+    <header class="container mx-auto text-center pt-9">
+        <h2 class="text-3xl font-semibold">Checkout form</h2>
+        <p class="text-2xl mt-2">Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+
+    </header>
+    <main class="container mx-auto my-20 ">
+        <div>
+            <div>
+                <h3 class="mb-4 text-3xl font-normal">Billing address</h3>
+                <div class="flex gap-7">
+                    <div>
+                        <label class="text-lg font-normal" for="firstname">First name</label>
+                        <input  type="text" class="mt-2 input input-bordered w-full max-w-xs" />
+                    </div>
+                    <div>
+                        <label class="text-lg font-normal" for="lastname">Last name</label>
+                        <input  type="text" class="mt-2 input input-bordered w-full max-w-xs" />
+                    </div>                   
+                </div>
+
+
+
+                <div>
+                    <label class="text-lg font-normal" for="firstname">Username   </label>
+                    <br>
+                    <form class="row row-cols-lg-auto g-3 align-items-center">
+                        <div class="col-12  ">
+                          <label class="visually-hidden" for="inlineFormInputGroupUsername">Username</label>
+                          <div class="input-group ">
+                            <div class="input-group-text">@</div>
+                            <input type="text" class="@media (max-width: 767.98px)  form-control " id="inlineFormInputGroupUsername" placeholder="Username">
+                          </div>
+                        </div>
+                </div>
+
+
+
+
+
+
+                <div>
+                    <label class="text-lg font-normal" for="firstname">Email <span class="text-slate-500">(optional)</span>  </label>
+                    <br>
+                    <input  type="email" placeholder ="you@example.com" class="text-xl mt-2 input input-bordered w-full max-w-screen-sm " />
+                </div>
+                <div>
+                    <label class="text-lg font-normal" for="firstname">Address  </label>
+                    <br>
+                    <input  type="text" placeholder ="1234 Main st" class="text-xl mt-2 input input-bordered w-full max-w-screen-sm " />
+                </div>
+                <div>
+                    <label class="text-lg font-normal" for="firstname">Address 2<span class="text-slate-500">(optional)</span>  </label>
+                    <br>
+                    <input  type="text" placeholder ="Apartment or suite" class="text-xl mt-2 input input-bordered w-full max-w-screen-sm " />
+                </div>
+                <div class="grid grid-cols-3 gap-2">
+                    <div>
+                        <label class="text-lg font-normal" for="country">Country  </label>
+                        <br>
+                        <select class="h-12 max-w-44 form-select" aria-label="Default select example">
+                            
+                            <option selected>Choose....</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+                    <div>
+                        <label class="text-lg font-normal" for="country">Country  </label>
+                        <br>
+                        <select class="h-12 form-select" aria-label="Default select example">
+                            
+                            <option selected>Choose....</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+                    <div>
+                        <label class="text-lg font-normal" for="firstname">Zip </label>
+                        <br>
+                        <input  type="text"  class="text-xl  mb-10 input input-bordered w-full max-w-screen-sm " />
+                    </div>
+
+                </div>
+
+            </div>
+            <div>
+            
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="form-check mt-8">
+            <input class="bg-slate-300 form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Shipping address is the same as my billing address
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="bg-slate-300 form-check-input" type="checkbox" value="" id="flexCheckChecked">
+            <label class="form-check-label" for="flexCheckChecked">
+              Save this information for next time
+            </label>
+          </div>
+
+          <hr class="mt-7">
+
+        <div class="mt-4">
+            <h2 class="text-3xl font-medium mb-4">Payment</h2>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label class="form-check-label " for="flexRadioDefault1">
+              Credit card
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+              Debit card
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Paypal
+            </label>
+          </div>
+        </div>
+
+         <div class="flex gap-7">
+                <div>
+                    <label class="text-lg font-normal" for="firstname">Name on card</label>
+                    <input  type="text" class="mt-2 input input-bordered w-full max-w-xs" />
+                </div>
+                <div>
+                    <label class="text-lg font-normal" for="lastname">Credit card number</label>
+                    <input  type="text" class="mt-2 input input-bordered w-full max-w-xs" />
+                </div>                   
+        </div>
+        <div id="passwordHelpBlock" class="form-text">
+            Full name as displayed on card
+          </div>
+
+          <div class="flex gap-3">
+            <div>
+                <label class="text-lg font-normal" for="firstname">Expiration</label>
+                <br>
+                <input  type="text" class="mt-2 input input-bordered w-40" />
+            </div>
+            <div>
+                <label class="text-lg font-normal" for="lastname">CVV</label>
+                <br>
+                <input  type="text" class="mt-2 input input-bordered w-40" />
+            </div>                   
+        </div>
+
+         
+
+          <hr class="mt-8">
+
+
+          <div class="d-grid gap-2 mt-8">
+            <button class="text-xl rounded-sm w-auto bg-blue-600 text-white py-3" type="button">Continue to checkout</button>
+          </div>
+        
+
+
+    </main>
+    
+    <footer class="footer footer-center -mt-10 bg-base-200 text-base-content rounded p-10">
+        
+       
+        <aside>
+          <p class="text-xl"> ©2017-2018 Company Name</p>
+        </aside>
+        <nav class="text-xl grid grid-flow-col gap-4 -mt-8 text-blue-600">
+            <a class="link link-hover">Privacy</a>
+            <a class="link link-hover">Terms</a>
+            <a class="link link-hover">Support</a>
+          </nav>
+      </footer>
+</body>
+</html>
